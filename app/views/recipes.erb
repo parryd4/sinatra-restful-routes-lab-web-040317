@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>All Recipes</title>
+  </head>
+  <body>
+    <h1>All Recipes</h1>
+    <ol><% @recipes.each do |recipe| %>
+    <h1><a href='/recipes/<%= recipe.id %>' ><%= recipe.name %></h1>
+    <% end %></ol>
+  </body>
+</html>
